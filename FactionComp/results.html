@@ -26,7 +26,7 @@
             var background = new Image();
             background.onload = function() {
                 var c = document.createElement("canvas");
-                c.width = 1600;
+                c.width = 1400;
                 c.height = 1600;
                 var ctx = c.getContext("2d");
                 ctx.fillStyle = "#FFFFFF"
@@ -47,7 +47,7 @@
                 ctx.fillText("Auth - Dem/Lib Axis (y): " + y_axis, 725, 1450)
                 ctx.textAlign="right"
                 ctx.font="60px Montserrat"
-                ctx.fillText("RandomestBluer.github.io/FactionComp", 40, 1560)
+                ctx.fillText("RandomestBluer.github.io/FactionComp", 700, 1560)
     
                 document.getElementById("banner").src = c.toDataURL();
             }
