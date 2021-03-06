@@ -1,3 +1,4 @@
 questions =  [
-    {"id"=0, "question": TEST, "effects": {"war":1}},
-    {"id"=1, "question": TEST, "effects": {"auth":1}},
+    {"id"=0, "question": Strongly Agree, "effects": {"war":1}},
+    {"id"=1, "question": Strongly Disagree, "effects": {"auth":1}}
+];
