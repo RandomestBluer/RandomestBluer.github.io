@@ -10,6 +10,27 @@
 <body>
   <h1>Pixelplace FactionComp<h1>
   <hr>
-  <button class="button" onclick="location.href='instructions.html';" style="background-color: #2196f3;">Take the test!</button> <br>
+  <img src=" "id="banner">
+  <button class="button" onclick="location.href='instructions.html';" style="background-color: #2196f3;">Take the test!</button>
+  
+    <script type="application/javascript" src="questions.js"></script>
+    <script type="text/javascript">
+        document.getElementById("numOfQuestions").innerHTML = questions.length;
 
-      
+        window.onload = function() {
+            var background = new Image();
+            background.onload = function() {
+                var c = document.createElement("canvas");
+                c.width = 1400;
+                c.height = 1300;
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#FFFFFF"
+                ctx.fillRect(0, 0, 1850, 1300);
+                ctx.drawImage(background, 0, 0);
+    
+                document.getElementById("banner").src = c.toDataURL();
+            }
+            background.src = "./compass.png";
+        }
+    </script>
+</body>
